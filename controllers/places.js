@@ -1,10 +1,9 @@
+
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-  res.send('GET Places');
+  res.send('GET /places');
 });
-
-
 
 
 
