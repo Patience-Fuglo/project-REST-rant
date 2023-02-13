@@ -1,5 +1,6 @@
 const React = require('react')
 
+
 function Def (html) {
   return (
    <html>
@@ -7,7 +8,7 @@ function Def (html) {
            <title>Title</title>
         </head>
       <body>
-        {html.childern}
+        {html.children}
       </body>
    </html>
   )
