@@ -1,15 +1,22 @@
-const React = require('react')
-const Def = require('./default')
+const React = require("react");
+const Def = require("./default");
 
-function error404 () {
+function error404() {
   return (
     <Def>
       <main>
-         <h1>404: PAGE NOT FOUND</h1>
-           <p>Oops, sorry, we can't find this page</p>
+        <h1>404: PAGE NOT FOUND</h1>
+        <p>Oops, sorry, we can't find this page</p>
+        <div>
+          <img src="/images/salad-bar.jpg" alt="gourmet greens salad" />
+          <div>
+            Photo by <a href="AUTHOR LINK">Dan Gold</a> on{" "}
+            <a href="https://unsplash.com/">Unsplash</a>
+          </div>
+        </div>
       </main>
     </Def>
-  )
+  );
 }
 
-module.exports = error404
+module.exports = error404;
