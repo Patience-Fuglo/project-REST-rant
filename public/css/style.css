@@ -2,6 +2,35 @@ h1 {
   text-align: center;
   color: cornflowerblue;
 }
+nav {
+  background-color: cornflowerblue;
+  padding: 10px;
+  /* text-align: center; */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 65px 0 65px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+  justify-content: center;
+  padding: 10px 65px 0 65px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
 div.col-sm-6 > img {
   display: inline-block;
   margin: 0 auto;
@@ -37,4 +66,15 @@ div {
 p {
   text-align: center;
   margin-top: 10px;
+}
+
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
 }

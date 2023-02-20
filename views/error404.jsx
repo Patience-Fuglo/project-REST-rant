@@ -8,10 +8,10 @@ function error404() {
         <h1>404: PAGE NOT FOUND</h1>
         <p>Oops, sorry, we can't find this page</p>
         <div>
-          <img src="/images/salad-bar.jpg" alt="gourmet greens salad" />
+          <img src="/images/error404.jpg" alt="error 404 page not found" />
           <div>
-            Photo by <a href="AUTHOR LINK">Dan Gold</a> on{" "}
-            <a href="https://unsplash.com/">Unsplash</a>
+            Photo by <a href="AUTHOR LINK">Coding Nepal</a> on{" "}
+            <a href="https://codingnepalweb.com/">CodingNepal</a>
           </div>
         </div>
       </main>
