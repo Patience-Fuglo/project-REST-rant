@@ -1,5 +1,5 @@
 const React = require("react");
-const Def = require("../default");
+const Default = require("../default");
 
 function index({ places }) {
   let placesFormatted = places.map((place) => {
@@ -21,14 +21,13 @@ function index({ places }) {
     );
   });
   return (
-    <Def>
+    <Default>
       <main>
-        <h1>Places to Rant or Rave About</h1>
         <div className="container">
           <div className="row">{placesFormatted}</div>
         </div>
       </main>
-    </Def>
+    </Default>
   );
 }
 

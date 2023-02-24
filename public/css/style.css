@@ -1,7 +1,41 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
 h1 {
   text-align: center;
   color: cornflowerblue;
 }
+h2 {
+  text-align: center;
+  color: lightskyblue;
+}
+
+p {
+  text-align: center;
+  /* margin-top: 10px; */
+  color: black;
+}
+
 nav {
   background-color: cornflowerblue;
   padding: 10px;
@@ -11,14 +45,14 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px 65px 0 65px;
+  /* padding: 10px 65px 0 65px; */
 }
 
 nav li {
   display: inline;
   margin-right: 25px;
-  justify-content: center;
-  padding: 10px 65px 0 65px;
+  /* justify-content: center; */
+  /* padding: 10px 65px 0 65px; */
 }
 
 nav a {
@@ -31,18 +65,18 @@ nav a:hover {
   text-decoration: none;
 }
 
-div.col-sm-6 > img {
+/* div.col-sm-6 > img {
   display: inline-block;
   margin: 0 auto;
   display: flex;
   padding: 5px;
   width: 300px;
   height: 300px;
-}
+} */
 
-img {
+#home-img {
   text-align: center;
-  max-width: 805px;
+  max-width: 750px;
   height: auto;
   display: block;
   margin-left: auto;
@@ -51,30 +85,43 @@ img {
   padding: 5px;
 }
 
-div {
+/* div {
   text-align: center;
   margin-top: 10px;
-}
+} */
 
-.btn-primary {
+/* .btn-primary {
   text-align: center;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
-}
-
-p {
-  text-align: center;
-  margin-top: 10px;
-}
+} */
 
 body {
   background-color: lightblue;
-  text-align: center;
+  /* text-align: center; */
 }
 
 main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
+  padding: 1rem;
+}
+
+.btn {
+  margin: 10px;
+}
+
+#splashImg {
+  max-width: 60%;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
 }

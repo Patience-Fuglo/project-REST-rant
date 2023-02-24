@@ -120,3 +120,5 @@ function new_form(data) {
     </Default>
   );
 }
+
+module.exports = new_form;

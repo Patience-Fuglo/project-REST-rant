@@ -1,3 +1,4 @@
+// require mongoose
 const mongoose = require("mongoose");
 
 // creating Schema constructor
@@ -8,7 +9,7 @@ const placeSchema = new mongoose.Schema({
   cuisines: { type: String, required: true },
   pic: {
     type: String,
-    default: "/images/sarah-cervantes-PKXAiiy1O4U-unsplash.jpg",
+    default: "/images/thai-food.jpg",
   },
   founded: {
     type: Number,

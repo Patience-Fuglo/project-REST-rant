@@ -100,7 +100,7 @@ router.post("/:id/comment", (req, res) => {
 router.put("/:id", (req, res) => {
   if (!req.body.pic) {
     // Default image if one is not provided
-    req.body.pic = "/images/sarah-cervantes-PKXAiiy1O4U-unsplash.jpg";
+    req.body.pic = "/images/coffee-unsplash.jpg";
   }
   if (!req.body.city) {
     req.body.city = "Anytown";
