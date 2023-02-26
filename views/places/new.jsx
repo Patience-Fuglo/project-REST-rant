@@ -92,7 +92,7 @@ function new_form(data) {
               </datalist>
             </div>
             <div className="form-group col-sm-4">
-              <label htmlFor="founded">Established</label>
+              <label htmlFor="founded">Founded Year</label>
               <input
                 type="number"
                 className="form-control"

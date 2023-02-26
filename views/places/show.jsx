@@ -40,7 +40,7 @@ function show(data) {
             <div className="col-sm-6">
               <img
                 src={data.place.pic}
-                className="rounded mx-auto d-block"
+                // className="rounded mx-auto d-block"
                 alt={data.place.name}
               />
               <h3>
