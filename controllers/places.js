@@ -98,25 +98,18 @@ router.post("/:id/comment", (req, res) => {
 
 // EDIT
 router.put("/:id", (req, res) => {
-  if (!req.body.pic) {
-    // Default image if one is not provided
-    req.body.pic = "/images/coffee-unsplash.jpg";
-  }
-  if (!req.body.city) {
-    req.body.city = "Anytown";
-  }
-  if (!req.body.state) {
-    req.body.state = "USA";
-  }
-  // Save the new data
-  db.Place.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
-    (updatedPlace) => {
+  db.Place.findByIdAndUpdate(req.params.id, req.body)
+    .then(() => {
       res.redirect(`/places/${req.params.id}`);
-    }
-  );
+    })
+    .catch((err) => {
+      console.log("err", err);
+      res.render("error404");
+    });
 });
 
 // DELETE
+
 router.delete("/:id", (req, res) => {
   db.Place.findByIdAndDelete(req.params.id)
     .then((place) => {
