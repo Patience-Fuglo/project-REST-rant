@@ -3,7 +3,7 @@ const express = require("express");
 //Modules and Globals
 require("dotenv").config();
 const app = express();
-const port = process.env.PORT;
+// const port = process.env.PORT;
 const methodOverride = require("method-override");
 
 //Express Settings

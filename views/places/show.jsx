@@ -1,5 +1,5 @@
 const React = require("react");
-const Def = require("../default");
+const Default = require("../default");
 
 function show(data) {
   let comments = <h3 className="inactive">No comments yet!</h3>;
@@ -39,7 +39,7 @@ function show(data) {
     });
   }
   return (
-    <Def>
+    <Default>
       <main>
         <div className="row">
           <div className="col-sm-6">
@@ -124,7 +124,7 @@ function show(data) {
           />
         </form>
       </main>
-    </Def>
+    </Default>
   );
 }
 

@@ -37,7 +37,6 @@ function Default(html) {
           {html.children}
           <div className="push"></div>
         </div>
-        <footer className="footer"></footer>
       </body>
     </html>
   );

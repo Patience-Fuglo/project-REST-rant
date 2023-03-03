@@ -4,11 +4,7 @@ const Default = require("../default");
 function new_form(data) {
   let message = "";
   if (data.message) {
-    message = (
-      <div className="alert alert-danger" role="alert">
-        <h4 className="alert-danger">{data.message}</h4>
-      </div>
-    );
+    message = <h4 className="alert-danger">{data.message}</h4>;
   }
   return (
     <Default>

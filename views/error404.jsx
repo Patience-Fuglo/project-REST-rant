@@ -5,11 +5,9 @@ function error404() {
   return (
     <Default>
       <main>
-        <h2>404: PAGE NOT FOUND</h2>
+        <h1>404: PAGE NOT FOUND</h1>
         <p>Oops, sorry, we can't find this page!</p>
-        <div>
-          <img src="/images/cat-banner.png" alt="A lost cat" />
-        </div>
+        <img src="/images/cat-banner.png" alt="A lost cat" />
       </main>
     </Default>
   );
