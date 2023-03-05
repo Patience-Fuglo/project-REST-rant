@@ -16,7 +16,8 @@ app.use(methodOverride("_method"));
 
 //Routes
 app.get("/", (req, res) => {
-  res.render("home");
+  res.send("welcome to my app");
+  // res.render("home");
 });
 
 //Controllers $ Routes
