@@ -16,8 +16,7 @@ app.use(methodOverride("_method"));
 
 //Routes
 app.get("/", (req, res) => {
-  res.send("welcome to my app");
-  // res.render("home");
+  res.render("home");
 });
 
 //Controllers $ Routes
@@ -33,5 +32,3 @@ const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
-
-module.exports = app;
